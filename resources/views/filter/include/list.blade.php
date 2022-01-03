@@ -19,7 +19,7 @@
                             <br>
                             <hr>
                             <br>
-                            <table class="barcodes-table table table-striped">
+                            <table class="users-table table table-striped">
                                 <thead>
                                     <tr>
                                         <th>User ID</th>
@@ -83,7 +83,7 @@
     <script>
         $(document).ready(function(){
 
-            $('.barcodes-table').DataTable({
+            $('.users-table').DataTable({
                 dom: 'Bfrtip',
                 buttons: [
                     'excel', 'pdf','print'

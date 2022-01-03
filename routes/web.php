@@ -14,11 +14,13 @@ use App\Http\Controllers\UserController;
 */
 
 Route::any('/', [UserController::class,'index'])->name('search');
+Route::any('/analytics', [UserController::class,'analytics']);
+Route::any('users/all', [UserController::class,'users']);
 $users_columns=[
-    'user_id'=>'User Id',
+    'id'=>'User Id',
     'first_name'=>'FirstName',
-    'lastname'=>'LastName',
-    'fullname'=>'FullName',
+    'last_name'=>'LastName',
+    'full_name'=>'FullName',
     'gender'=>'Gender',
     'number_of_messages'=>'NumberOfMessages',
     'age'=>'Age',

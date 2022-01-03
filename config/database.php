@@ -34,11 +34,7 @@ return [
     */
 
     'connections' => [
-'mongodb' => [
-        'driver' => 'mongodb',
-        'dsn' => env('DB_URI', 'mongodb+srv://aelsadany:Admin_1233789<cluster0-shard-00-00.9t8nq.mongodb.net:27017,cluster0-shard-00-01.9t8nq.mongodb.net:27017,cluster0-shard-00-02.9t8nq.mongodb.net:27017/mongo_test?ssl=true&replicaSet=atlas-cmd1wg-shard-0&authSource=admin&retryWrites=true&w=majority'),
-        'database' => 'mongo_test',
-],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),

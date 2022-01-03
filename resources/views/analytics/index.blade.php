@@ -11,9 +11,15 @@
             }
         </style>
         <div class="content-body" style="min-height: 600px;">
-           @include('filter.include.search')
-           @include('filter.include.list')
-            
+           
+        @include('charts.GandersPiechart')
+        <hr>
+        <div class="clearfix"></div>
+        @include('charts.ageBarChart')
+        <hr>
+        <div class="clearfix"></div>
+        @include('charts.userCreationBarChart')
+
         </div>
     </div>
 </div>

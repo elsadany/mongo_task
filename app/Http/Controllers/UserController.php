@@ -14,7 +14,6 @@ class UserController extends Controller {
 
         if ($request->has('form')) {
 
-
             $users = $this->search($users, $request->get('form'));
         }
 
@@ -54,7 +53,7 @@ class UserController extends Controller {
                     return $users->orWhere($column, 'like', $value . '%');
             case $opertor == 'contain':
                 if (in_array($contact, ['', 'AND']))
-                    return $users->where($column, 'like', '%' . $value, '%');
+                    return $users->where($column, 'like', '%' . $value. '%');
                 else
                     return $users->orWhere($column, 'like', '%' . $value . '%');
             default :

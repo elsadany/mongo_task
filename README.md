@@ -1,7 +1,7 @@
 
 ## instructions
 
-- `composer Install`
+- `composer install`
 
 - `cp .env.example .env`
 - `add your .env credentials`
